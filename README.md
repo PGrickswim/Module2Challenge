@@ -12,42 +12,67 @@ The purpose of the project was to refactor code written specifically to "do the 
 -Additionally, looking at the code itself can provide a view of the complexity of the original and refactored code.
 
 ## Results
+
 ### Original Code
+
 - The original code used to analyze stocks leveraged a nested for loop to first view the entirety of rows in the dataset and then for each row, find the appropriate starting or ending price based on the layout of the data.
 - The code continued to loop until all rows were exhausted based on how the original code was written.
+
 **Original Code Script**
+
 ![Original Code Script](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Origina_Code_Script.png)
 
 ### Refactored Code
+
 - The refactored code used to analyze stocks leverages multiple for loops but they are not nested in each other, meaning the computing power needed to scan each array is less than that of the original code.
 -Once the refactored code finds data for one of the defined tickers, the tickerIndex is increased by one so that the code can then look to find the next ticker.
+
 **Refactored Code Script**
+
 ![Refactored Code Script](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Refactored_Code_Script.png)
 
+
 ### Outputs
+
 - Below, see that the outputs, after programming and formatting code are run, are identical in output.
+
 **2017 - Original Code**
-![2017 - Original Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Refactored_Code_Script.png)
+
+![2017 - Original Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Stocks_2017.png)
+
 **2017 - Refactored Code**
-![2017 - Refactored Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Refactored_Code_Script.png)
+
+![2017 - Refactored Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Stocks_2017.png)
+
 
 **2018 - Original Code**
+
 ![2018 - Original Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Stocks_2018.png)
+
 **2018 - Refactored Code**
+
 ![2018 - Refactored Code](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Stocks_2018.png)
+
 
 ### Execution Times
 - See below that while execution times, as measured by the timer written into the VBA Script, differ only slightly, there is a time advantage to running the code with the refactored script. 
 
 **2017 - Original Code**
+
 ![2017 - Original Code Time](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Original_Code_2017.png)
+
 **2017 - Refactored Code**
+
 ![2017 - Refactored Code Time](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/VBA_Challenge_2017.png)
 
 **2018 - Original Code**
+
 ![2018 - Original Code Time](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/Original_Code_2018.png)
+
 **2018 - Refactored Code**
+
 ![2018 - Refactored Code Time](https://github.com/PGrickswim/Module2Challenge/blob/main/Resources/VBA_Challenge_2018.png)
+
 
 ## Summary
 In summary, the refactored code sets us up well to analyze a larger dataset. Refactoring code has some advantages and disadvantages, which will be shown below.
